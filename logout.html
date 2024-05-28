@@ -1,0 +1,56 @@
+<style>
+  /* Thiết kế chung cho biểu mẫu */
+#registrationForm {
+  max-width: 400px; /* Đảm bảo rằng biểu mẫu không quá rộng */
+  margin: 0 auto; /* Canh giữa biểu mẫu */
+  padding: 20px;
+  border: 1px solid #ccc; /* Đường viền xung quanh biểu mẫu */
+  border-radius: 5px; /* Bo tròn các góc */
+}
+
+/* Thiết kế cho nhãn */
+label {
+  display: block; /* Hiển thị nhãn trên một dòng mới */
+  margin-bottom: 10px; /* Khoảng cách giữa các nhãn */
+}
+
+/* Thiết kế cho input */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Input chiếm toàn bộ chiều rộng của phần tử cha */
+  padding: 10px; /* Khoảng cách bên trong input */
+  margin-bottom: 20px; /* Khoảng cách giữa các input */
+  border: 1px solid #ccc; /* Đường viền xung quanh input */
+  border-radius: 5px; /* Bo tròn các góc */
+}
+
+/* Thiết kế cho nút đăng nhập */
+button[type="submit"] {
+  width: 100%; /* Nút chiếm toàn bộ chiều rộng của phần tử cha */
+  padding: 10px; /* Khoảng cách bên trong nút */
+  background-color: #007bff; /* Màu nền của nút */
+  color: #fff; /* Màu chữ của nút */
+  border: none; /* Không có đường viền */
+  border-radius: 5px; /* Bo tròn các góc */
+  cursor: pointer; /* Con trỏ chuột khi di chuột qua nút */
+}
+
+/* Thiết kế cho nút đăng nhập khi di chuột qua */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Màu nền thay đổi khi di chuột qua */
+}
+
+</style>
+<form id="loginForm">
+  <label for="username">Tên :</label><br>
+  <input type="text" id="username" name="username" required><br><br>
+
+  <label for="newEmail">Email:</label><br>
+  <input type="email" id="newEmail" name="newEmail" required><br><br>
+  
+  <label for="password">Mật khẩu:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+  
+  <button type="submit">Đăng kí</button>
+</form>
